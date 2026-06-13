@@ -1,0 +1,125 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: aqua;
+    margin-top: 70px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1000;
+    height: 70px;
+    width: 100vw;
+}
+.banner {
+    height: 100vh;
+    width: 100vw;
+    background-color: cadetblue;
+    
+    position: relative;
+    overflow: hidden;
+    left: 0;
+}
+
+#b1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.mi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 3;
+}
+
+.mi h1 {
+    font-size: 80px;
+    color: #d4af37;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.mi p {
+    font-size: 27px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    color:#d8c5c5;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 15px 40px;
+    border: 2px solid black ;
+    color: #0B0C10;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: #d4af37;
+    color: #0B0C10;
+}
+#collection {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+strong{
+    color: #d4af37;
+}
+.collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    background-color: black;
+
+}
+
+.wine {
+    background: black;
+    border-radius: 15px;
+    overflow: hidden;
+    outline: solid white 1px;
+    text-align: center;
+    transition: transform .2s;
+    position: relative;
+    
+}
+.wine:hover {
+    transform: scale(1.1)
+}
+
+.wine img {
+    width: 100%;
+    
+    object-fit: cover;
+}
+
+.wine h3 {
+    margin: 15px 0;
+    color: #FF9F1C;
+}
+
+.wine p {
+    padding: 0 15px 20px;
+    color: #E2E4E9;
+
+}
